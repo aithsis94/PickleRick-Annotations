@@ -1,4 +1,4 @@
-package picklerick;
+package in.picklerick;
 
 /**
  * Created by ajitesh on 06/11/18.

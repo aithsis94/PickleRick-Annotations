@@ -1,4 +1,4 @@
-package picklerick;
+package in.picklerick;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,9 +9,9 @@ import java.lang.annotation.Target;
  * Created by ajitesh on 06/11/18.
  */
 
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.SOURCE)
-public @interface NamedInject {
+public @interface Component {
 
-    String value();
+    ComponentType type() default ComponentType.SINGLETON;
 }
